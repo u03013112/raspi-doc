@@ -8,6 +8,7 @@
 sudo usermod -aG docker pi && sudo reboot
 
 ## Docker Compose 安装
-`sudo apt-get update`
-`sudo apt-get install -y python python-pip`
-`sudo pip install docker-compose`
+`apt-get update`
+`apt-get install -y libffi-dev libssl-dev`
+`apt install -y python3-dev python3 python3-pip`
+`pip3 install docker-compose -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com`
