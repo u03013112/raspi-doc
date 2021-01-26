@@ -5,7 +5,13 @@ sudo iw dev wlan0 set power_save off
 country=CN
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
- 
+
+network={
+    ssid="NB1201"
+    psk="19850421"
+    priority=100
+}
+
 network={
     ssid="NB1201-5G"
     psk="19850421"
